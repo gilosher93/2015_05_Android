@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("power2(3,3)==" + power2(0, 0));
+        System.out.println(123 / 10);
     }
 
     // returns the distance between x and y, for example: distance(7,5) is 2
@@ -79,6 +79,17 @@ public class Main {
         return product(power2(x,distance(y,1)),x);
 
     }
+
+    public static int sumOfDigits(int x){
+        int result = 0;
+        while (x>0){
+            result += x%10;
+            x /= 10;
+        }
+        return result;
+    }
+
+    
 }
 /*
 power(3, 3)

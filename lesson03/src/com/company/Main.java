@@ -38,9 +38,25 @@ public class Main {
 
 
         //int[] result = subArray(arr, 4, 10);
-        int[] result = reverseArray(arr);
-        printArray(result);
+        //int[] result = reverseArray(arr);
+        //printArray(result);
+        //int a = 1;
+        //stam(a);
+        //System.out.println("the value of a is: " + a);
 
+        int[] myArray = {1};
+        stam2(myArray);
+        System.out.println(myArray[0]);
+    }
+
+    public static void stam(int x){
+        x++;
+        System.out.println("the value of x is: " + x);
+    }
+
+    public static void stam2(int[] numbers){
+        numbers[0]++;
+        System.out.println(numbers[0]);
     }
 
     public static void drawX(int size){
@@ -145,6 +161,10 @@ public class Main {
             reversed[numbers.length - i - 1] = numbers[i];
         }
         return reversed;
+    }
+
+    public static void reverseArray2(int[] numbers){
+
     }
 
 }

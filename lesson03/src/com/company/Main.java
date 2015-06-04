@@ -18,16 +18,28 @@ public class Main {
         String myString = "hello";
 
         int[] x = new int[50];
-        for (int j = 0; j < 50; j++) {
+        for (int j = 0; j < x.length; j++) {
             x[j] = 0;
         }
         x[0] = 18;
         x[1] = 100;
         x[2] = -300;
+
+        /*
         for (int j = 0; j < 50; j++) {
             System.out.println(x[j]);
         }
-        
+        */
+
+        //System.out.println(sum(x));
+        //System.out.println(howManyInRange(x,17,200));
+        int[] arr =      {4, 2, 7, 15, 3};
+
+
+
+        //int[] result = subArray(arr, 4, 10);
+        int[] result = reverseArray(arr);
+        printArray(result);
 
     }
 
@@ -72,7 +84,69 @@ public class Main {
             System.out.println();
         }
         */
+
+
+
+
+
     }
+
+
+    public static int max(int[] numbers){
+        int max = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if(numbers[i] > max)
+                max = numbers[i];
+        }
+        return max;
+    }
+
+    public static int sum(int[] numbers){
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        return sum;
+    }
+
+    public static int howManyInRange(int[] numbers, int min, int max){
+        int counter = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i]>=min && numbers[i]<max)
+                counter++;
+        }
+        return counter;
+    }
+
+    public static int[] subArray(int[] numbers, int min, int max){
+        int[] subArray = new int[howManyInRange(numbers, min, max)];
+        int counter = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i]>=min && numbers[i]<max)
+                subArray[counter++] = numbers[i];
+        }
+        return subArray;
+    }
+
+    public static void printArray(int[] numbers){
+        System.out.print("[");
+        if(numbers.length>0) {
+            for (int i = 0; i < numbers.length - 1; i++) {
+                System.out.print(numbers[i] + ",");
+            }
+            System.out.print(numbers[numbers.length-1]);
+        }
+        System.out.println("]");
+    }
+
+    public static int[] reverseArray(int[] numbers){
+        int[] reversed = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            reversed[numbers.length - i - 1] = numbers[i];
+        }
+        return reversed;
+    }
+
 }
 /*
 

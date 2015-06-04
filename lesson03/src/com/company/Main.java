@@ -33,9 +33,10 @@ public class Main {
 
         //System.out.println(sum(x));
         //System.out.println(howManyInRange(x,17,200));
-        int[] arr =      {4, 2, 7, 15, 3};
+        int[] arr =      {3, 15, 7, 2, 4};
+        // {4, 2, 7, 15, 3};
 
-
+        int[] arrSorted = {2, 3, 4, 7, 15 };
 
         //int[] result = subArray(arr, 4, 10);
         //int[] result = reverseArray(arr);
@@ -44,9 +45,33 @@ public class Main {
         //stam(a);
         //System.out.println("the value of a is: " + a);
 
-        int[] myArray = {1};
-        stam2(myArray);
-        System.out.println(myArray[0]);
+        //int[] myArray = {1};
+        //stam2(myArray);
+        //System.out.println(myArray[0]);
+        //reverseArray2(arr);
+        //printArray(arr);
+
+        /*
+        int[][] myArray2 = new int[3][5];
+        myArray2[1][3] = 12;
+        for (int j = 0; j < myArray2.length; j++) {
+            for (int k = 0; k < myArray2[j].length; k++) {
+                System.out.print(myArray2[j][k]+",");
+            }
+            System.out.println();
+        }
+        */
+        boolean[][] canvas = new boolean[10][12];
+        canvas[2][5] = true;
+        canvas[4][6] = true;
+        canvas[1][3] = true;
+        for (int j = 0; j < canvas.length; j++) {
+            for (int k = 0; k < canvas[j].length; k++) {
+                System.out.print(canvas[j][k] ? "*" : " ");
+            }
+            System.out.println();
+        }
+
     }
 
     public static void stam(int x){
@@ -164,10 +189,20 @@ public class Main {
     }
 
     public static void reverseArray2(int[] numbers){
+        for (int i = 0; i < numbers.length / 2; i++) {
+            int temp = numbers[i];
+            numbers[i] = numbers[numbers.length - i -1];
+            numbers[numbers.length -i -1] = temp;
+        }
+    }
+
+    public static void sortArray(int[] numbers){
 
     }
 
+
 }
+
 /*
 
 *           *

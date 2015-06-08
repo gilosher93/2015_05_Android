@@ -3,11 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        /*
+
         int[] numbers = {3, 2, 5, 1};
         sortArray(numbers);
         printArray(numbers);
-        */
+
+        /*
         boolean[][] canvas = new boolean[50][100];
         for (int i = 0; i < canvas.length; i++) {
             for (int j = 0; j < canvas[i].length; j++) {
@@ -16,7 +17,7 @@ public class Main {
         }
         drawRectangle(canvas, 10, 5, 20, 10);
         printCanvas(canvas);
-
+        */
 
     }
 
@@ -94,6 +95,18 @@ public class Main {
         System.out.println("]");
     }
 
+    //numbers = {4, 19, 39, 19}  number = 19  returns = 2
+    public static int indexOf(int[] numbers, int number){
+        for (int i = 0; i < numbers.length; i++) {
+            if(numbers[i] == number)
+                return i;
+        }
+        return -1;
+    }
+    //numbers = {4, 19, 39, 19} subArray = {19,4} returns -1
+    public static int indexOf(int[] numbers, int[] subArray){
+
+    }
 
 }
 

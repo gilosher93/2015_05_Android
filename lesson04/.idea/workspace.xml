@@ -26,9 +26,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76285714">
-              <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.91714287">
+              <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+              <folding>
+                <element signature="e#2995#2996#0" expanded="true" />
+                <element signature="e#3019#3020#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,12 +146,12 @@
       <option name="number" value="Default" />
       <updated>1433745936538</updated>
       <workItem from="1433745938221" duration="1808000" />
-      <workItem from="1433747784732" duration="8535000" />
+      <workItem from="1433747784732" duration="8867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10343000" />
+    <option name="totallyTimeSpent" value="10675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="997" extended-state="6" />
@@ -209,15 +212,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76285714">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.91714287">
+          <caret line="112" column="17" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+          <folding>
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3019#3020#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

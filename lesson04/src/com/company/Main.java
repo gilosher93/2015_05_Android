@@ -103,9 +103,14 @@ public class Main {
         }
         return -1;
     }
-    //numbers = {4, 19, 39, 19} subArray = {19,4} returns -1
+    //numbers = {4, 19, 39, 19}
+    // subArray = {19,4} returns -1
+    // subArray = {4, 19} returns 0
+    // subArray = {19, 39} returns 1
+    // subArray = {39, 19} returns 2
+    // subArray = {48, -5, 100} returns -1
     public static int indexOf(int[] numbers, int[] subArray){
-
+        return 0;
     }
 
 }

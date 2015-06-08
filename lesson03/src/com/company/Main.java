@@ -45,7 +45,7 @@ public class Main {
         //stam(a);
         //System.out.println("the value of a is: " + a);
 
-        //int[] myArray = {1};
+        //int[] myArray = {5, 30, -100};
         //stam2(myArray);
         //System.out.println(myArray[0]);
         //reverseArray2(arr);
@@ -141,6 +141,7 @@ public class Main {
         }
         return max;
     }
+
 
     public static int sum(int[] numbers){
         int sum = 0;

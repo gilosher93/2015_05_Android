@@ -9,5 +9,12 @@ public class Circles {
         Circle circle = new Circle();
         circle.area();
 
+        Shape s1 = new Shape();
+        s1.color = 123;
+
+
+        circle.color = 123;
+
+
     }
 }

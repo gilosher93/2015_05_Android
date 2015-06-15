@@ -4,7 +4,7 @@ package graphicshape;
  * Created by eladlavi on 6/11/15.
  */
 public class Circle extends Shape {
-    int xPos;
+    public int xPos;
     int yPos;
     private int radius;
 
@@ -26,10 +26,14 @@ public class Circle extends Shape {
         return Math.PI * radius * radius;
     }
 
+    /*
     public static double calculateArea(int radius){
         return Math.PI * radius * radius;
     }
+    */
 
-
-
+    @Override
+    public void fillColor(int newColor) {
+        System.out.println("filling the circle with color " + newColor);
+    }
 }

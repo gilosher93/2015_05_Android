@@ -32,6 +32,7 @@ public class Canvas {
         //Shape myShape = new Circle();
         //myShape.fillColor(123);
 
+        /*
         Shape[] myShapes = new Shape[3];
         myShapes[0] = new Shape();
         myShapes[1] = new Circle();
@@ -41,7 +42,30 @@ public class Canvas {
         myShapes[2] = rect;
         System.out.println("the sum of the perimeters is:"
                 + Shape.sumOfShapes(myShapes));
+        */
 
+
+        Circle c1 = new Circle();
+        //c1.fillColor(12);
+        byte red = 60;
+        byte green = 28;
+        byte blue = -30;
+        //c1.fillColor(red, green, blue);
+
+
+        Circle c2 = null;
+        //doSomthingWithCircle(c2);
+
+
+
+
+        System.out.println(new Circle(3, 4).toString());
+
+    }
+
+    public static void doSomthingWithCircle(Circle c){
+        if(c != null)
+            c.fillColor(1234);
     }
 
 /*

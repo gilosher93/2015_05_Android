@@ -10,4 +10,16 @@ public class Shape {
         System.out.println("filling the shape with color " + newColor);
     }
 
+    public double perimeter(){
+        return 0;
+    }
+
+    public static double sumOfShapes(Shape[] shapes){
+        double sum = 0;
+        for (int i = 0; i < shapes.length; i++) {
+            sum += shapes[i].perimeter();
+        }
+        return sum;
+    }
+
 }

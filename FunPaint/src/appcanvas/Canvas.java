@@ -29,8 +29,18 @@ public class Canvas {
         System.out.println("end");
         */
 
-        Shape myShape = new Circle();
-        myShape.fillColor(123);
+        //Shape myShape = new Circle();
+        //myShape.fillColor(123);
+
+        Shape[] myShapes = new Shape[3];
+        myShapes[0] = new Shape();
+        myShapes[1] = new Circle();
+        Rectangle rect = new Rectangle();
+        rect.height = 20;
+        rect.width = 30;
+        myShapes[2] = rect;
+        System.out.println("the sum of the perimeters is:"
+                + Shape.sumOfShapes(myShapes));
 
     }
 

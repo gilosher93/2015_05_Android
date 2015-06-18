@@ -36,4 +36,9 @@ public class Circle extends Shape {
     public void fillColor(int newColor) {
         System.out.println("filling the circle with color " + newColor);
     }
+
+    @Override
+    public double perimeter() {
+        return 2 * Math.PI * radius;
+    }
 }

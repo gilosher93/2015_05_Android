@@ -18,6 +18,24 @@ public class Main {
 
         System.out.println("end");
 
+
+        Animal[] zoo = new Animal[4];
+        zoo[0] = new Dog();
+        zoo[1] = new Cat();
+        zoo[2] = new Poodle();
+        zoo[3] = new Animal();
+
+        zoo[0].yearOfBirth = 2012;
+        zoo[0].setColor("Black");
+        zoo[1].yearOfBirth = 2005;
+        zoo[1].setColor("Green");
+        zoo[2].yearOfBirth = 2010;
+        zoo[2].setColor("Yellow");
+        zoo[3].yearOfBirth = 2010;
+        zoo[3].setColor("Purple");
+
+        Animal oldestAnimalInTheZoo = findOldestAnimal(zoo);
+        System.out.println(oldestAnimalInTheZoo.getColor());
     }
 
     public static void feedAnimal(Animal a){
@@ -25,7 +43,12 @@ public class Main {
     }
 
     public static Animal findOldestAnimal(Animal[] animals){
-        
+        Animal oldestAnimal = animals[0];
+        for (int i = 1; i < animals.length; i++) {
+            if(animals[i].getAge() > oldestAnimal.getAge())
+                oldestAnimal = animals[i];
+        }
+        return oldestAnimal;
     }
 
 }

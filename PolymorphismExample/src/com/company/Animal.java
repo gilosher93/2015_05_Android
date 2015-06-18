@@ -15,6 +15,10 @@ public class Animal {
         return 2015-yearOfBirth;
     }
 
+    public String getColor(){
+        return color;
+    }
+
     public void setColor(String someColor){
         color = someColor;
     }

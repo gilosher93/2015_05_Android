@@ -4,16 +4,17 @@ package graphicshape;
  * Created by eladlavi on 6/11/15.
  */
 public class Circle extends Shape {
-    public int xPos;
-    int yPos;
-    private int radius;
-    
-    //final static int defaultXpos = 21;
-    //final static int defaultYpos = 21;
+
+    private int xPos = 0;
+    private int yPos = 0;
+    private int radius = 0;
+
+    final static int defaultXpos = 21;
+    final static int defaultYpos = 21;
 
     //constructor בנאי
     public Circle(){
-        this(21, 21);
+        this(defaultXpos, defaultYpos);
     }
 
     public Circle(int x, int y){
@@ -21,15 +22,41 @@ public class Circle extends Shape {
     }
 
     public Circle(int x, int y, int r){
-        xPos = x;
-        yPos = y;
-        radius = r;
+        setXpos(x);
+        setYpos(y);
+        setRadius(r);
     }
     public Circle(int r){
-        this(21, 21, r);
-
-
+        this(defaultXpos, defaultYpos, r);
     }
+
+
+    public void setXpos(int xPos){
+        this.xPos = xPos;
+    }
+
+    public int getXpos(){
+        return xPos;
+    }
+
+    public void setYpos(int yPos){
+        this.yPos = yPos;
+    }
+
+    public int getYpos(){
+        return yPos;
+    }
+
+    public void setRadius(int radius){
+        if(radius>0)
+                this.radius = radius;
+    }
+
+    public int getRadius(){
+        return radius;
+    }
+
+
 
     @Override
     public String toString() {

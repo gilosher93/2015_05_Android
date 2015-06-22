@@ -14,6 +14,10 @@ public class Shape {
         return 0;
     }
 
+    public double area(){
+        return 0;
+    }
+
     public static double sumOfShapes(Shape[] shapes){
         double sum = 0;
         for (int i = 0; i < shapes.length; i++) {

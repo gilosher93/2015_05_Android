@@ -7,9 +7,11 @@ public class Rectangle extends Shape {
     private int width;
     private int height;
 
+    /*
     public Rectangle(){
         this(20, 40);
     }
+    */
 
     public Rectangle(int height, int width) {
         setHeight(height);
@@ -35,6 +37,10 @@ public class Rectangle extends Shape {
     }
 
 
+    @Override
+    public double area(){
+        return width * height;
+    }
 
     @Override
     public double perimeter() {

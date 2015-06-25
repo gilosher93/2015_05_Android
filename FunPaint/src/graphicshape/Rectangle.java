@@ -18,6 +18,10 @@ public class Rectangle extends Shape {
         setWidth(width);
     }
 
+    public Rectangle(Rectangle rectCopy){
+        this(rectCopy.getHeight(), rectCopy.getWidth());
+    }
+
     public int getHeight() {
         return height;
     }

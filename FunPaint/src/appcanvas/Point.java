@@ -13,6 +13,10 @@ public class Point {
         setYpos(y);
     }
 
+    public Point(Point point){
+        this(point.getXpos(), point.getYpos());
+    }
+
     public int getYpos() {
         return yPos;
     }

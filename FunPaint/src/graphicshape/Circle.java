@@ -10,6 +10,7 @@ public class Circle extends Shape {
     static final int DEFAULT_RADIUS = 10;
     public static final int DEFAULT_X = 21;
     public static final int DEFAULT_Y = 24;
+
     private Point center;
     private int radius = 0;
 
@@ -33,14 +34,18 @@ public class Circle extends Shape {
         this(new Point(DEFAULT_X, DEFAULT_Y), r);
     }
 
+    public Circle(Circle circleCopy){
+        this(circleCopy.getCenter(), circleCopy.getRadius());
+    }
 
 
     public Point getCenter() {
-        return center;
+        //return new Point(center); //without aliasing
+        return center; //with aliasing
     }
 
     public void setCenter(Point center) {
-        this.center = center;
+        this.center = new Point(center);
     }
 
     public void setRadius(int radius){

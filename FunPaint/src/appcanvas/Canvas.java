@@ -11,12 +11,16 @@ public class Canvas {
 
     public static void main(String[] args) {
 
-        Point p1 = null;
-        if(p1 instanceof Point){
-            System.out.println("p1 is a point");
-        }else{
-            System.out.println("p1 is not a point");
-        }
+        Point p1 = new Point(4,3);
+        Circle c1 = new Circle(p1, 18);
+        p1.setYpos(14);
+        c1.setCenter(p1);
+        System.out.println(c1);
+
+        Point hackedCenter = c1.getCenter();
+        hackedCenter.setYpos(100);
+        System.out.println(c1);
+        Point p2 = new Point(p1);
 
     }
 

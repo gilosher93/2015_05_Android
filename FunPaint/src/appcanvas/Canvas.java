@@ -11,11 +11,12 @@ public class Canvas {
 
     public static void main(String[] args) {
 
-        Square square = new Square(4);
-        square.setSide(5);
-        square.setWidth(12);
-        System.out.println(square.area());
-        System.out.println(square.perimeter());
+        Point p1 = null;
+        if(p1 instanceof Point){
+            System.out.println("p1 is a point");
+        }else{
+            System.out.println("p1 is not a point");
+        }
 
     }
 

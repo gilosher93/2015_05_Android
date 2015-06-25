@@ -42,7 +42,7 @@ public class Point {
         return distanceFromPoint(0, 0);
     }
 
-    double sumOfSquares(int x, int y){
+    protected double sumOfSquares(int x, int y){
         int deltaX = x - xPos;
         int deltaY = y - yPos;
         return deltaX*deltaX + deltaY*deltaY;
@@ -53,8 +53,20 @@ public class Point {
         return "(" + componentsByComma() + ")";
     }
 
-    String componentsByComma(){
+    protected String componentsByComma(){
         return xPos + "," + yPos;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null)
+            return false;
+        if(obj == this)
+            return true;
+        if(obj instanceof Point){
+            Point other = (Point)obj;
+            return this.xPos == other.xPos && this.yPos == other.yPos;
+        }
+        return false;
+    }
 }

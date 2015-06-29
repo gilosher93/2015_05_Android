@@ -95,13 +95,22 @@ public class Segment {
         if(p.getXpos()>=border.leftBorder && p.getXpos()<=border.rightBorder &&
                 p.getYpos()>=border.topBorder && p.getYpos()<=border.bottomBorder){
             double d = distanceFromPoint(p);
-            return d<0.5;
+            return d<0.4;
         }
         return false;
     }
 
     public void drawOnCanvas(boolean[][] canvas){
-
+        if(canvas == null)
+            return;
+        Border border = getBorder();
+        for (int i = border.topBorder; i <= border.bottomBorder; i++) {
+            for (int j = border.leftBorder; j <= border.rightBorder; j++) {
+                Point p = new Point(j,i);
+                if(isPointOnSegment(p))
+                    p.drawOnCanvas(canvas);
+            }
+        }
     }
 
     public Border getBorder(){

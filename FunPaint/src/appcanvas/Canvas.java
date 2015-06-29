@@ -33,8 +33,11 @@ public class Canvas {
 
         clearCanvas();
 
-        Point p = new Point(4,5);
-        p.drawOnCanvas(canvas);
+        Point p1 = new Point(4, 5);
+        Point p2 = new Point(12, 2);
+        Segment segment = new Segment(p1, p2);
+
+        segment.drawOnCanvas(canvas);
 
 
         drawCanvas();

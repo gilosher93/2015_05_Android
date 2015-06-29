@@ -3,20 +3,16 @@ package graphicshape;
 /**
  * Created by eladlavi on 6/11/15.
  */
-public class Shape {
+public abstract class Shape {
     protected int color;
 
     public void fillColor(int newColor){
         System.out.println("filling the shape with color " + newColor);
     }
 
-    public double perimeter(){
-        return 0;
-    }
+    public abstract double perimeter();
 
-    public double area(){
-        return 0;
-    }
+    public abstract double area();
 
     public static double sumOfShapes(Shape[] shapes){
         double sum = 0;

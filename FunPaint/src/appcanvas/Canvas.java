@@ -33,12 +33,13 @@ public class Canvas {
 
         clearCanvas();
 
-        Point p1 = new Point(4, 5);
-        Point p2 = new Point(12, 2);
-        Segment segment = new Segment(p1, p2);
+        //Point p1 = new Point(4, 5);
+        //Point p2 = new Point(12, 2);
+        //Segment segment = new Segment(p1, p2);
 
-        segment.drawOnCanvas(canvas);
+        //segment.drawOnCanvas(canvas);
 
+        drawMagenDavid();
 
         drawCanvas();
 
@@ -49,6 +50,18 @@ public class Canvas {
         Segment mySegment = new Segment(p1, p2);
         System.out.println(mySegment.distanceFromPoint(p3));
         */
+
+
+
+    }
+
+    public static void drawMagenDavid(){
+        Triangle triangle1 = new Triangle(new Point(1,10), new Point(40,10),
+                new Point(20,28));
+        Triangle triangle2 = new Triangle(new Point(1,15), new Point(40,15),
+                new Point(20,2));
+        triangle1.drawOnCanvas(canvas);
+        triangle2.drawOnCanvas(canvas);
 
     }
 

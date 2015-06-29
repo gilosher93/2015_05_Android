@@ -5,7 +5,7 @@ import appcanvas.Point;
 /**
  * Created by eladlavi on 6/11/15.
  */
-public class Circle extends Shape {
+public final class Circle extends Shape {
 
     static final int DEFAULT_RADIUS = 10;
     public static final int DEFAULT_X = 21;

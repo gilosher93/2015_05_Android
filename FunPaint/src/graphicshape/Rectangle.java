@@ -1,5 +1,7 @@
 package graphicshape;
 
+import appcanvas.Point;
+
 /**
  * Created by eladlavi on 6/15/15.
  */

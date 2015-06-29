@@ -90,6 +90,21 @@ public class Segment {
     }
 
     public boolean isPointOnSegment(Point p){
+        Border border = getBorder();
+
+        if(p.getXpos()>=border.leftBorder && p.getXpos()<=border.rightBorder &&
+                p.getYpos()>=border.topBorder && p.getYpos()<=border.bottomBorder){
+            double d = distanceFromPoint(p);
+            return d<0.5;
+        }
+        return false;
+    }
+
+    public void drawOnCanvas(boolean[][] canvas){
+
+    }
+
+    public Border getBorder(){
         int leftBorder = p1.getXpos();
         int rightBorder = p2.getXpos();
         if(p1.getXpos() > p2.getXpos()){
@@ -102,12 +117,14 @@ public class Segment {
             topBorder = p2.getYpos();
             bottomBorder = p1.getYpos();
         }
-        if(p.getXpos()>=leftBorder && p.getXpos()<=rightBorder &&
-                p.getYpos()>=topBorder && p.getYpos()<=bottomBorder){
-            double d = distanceFromPoint(p);
-            return d<0.5;
-        }
-        return false;
+        Border border = new Border();
+        border.leftBorder = leftBorder;
+        border.rightBorder = rightBorder;
+        border.topBorder = topBorder;
+        border.bottomBorder = bottomBorder;
+
+        return border;
+
     }
 
 

@@ -9,15 +9,43 @@ import graphicshape.*;
 public class Canvas {
 
 
+    private static boolean[][] canvas = new boolean[20][60];
+
+    public static void clearCanvas(){
+        for (int i = 0; i < canvas.length; i++) {
+            for (int j = 0; j < canvas[i].length; j++) {
+                canvas[i][j] = false;
+            }
+        }
+    }
+
+    public static void drawCanvas(){
+        for (int i = 0; i < canvas.length; i++) {
+            for (int j = 0; j < canvas[i].length; j++) {
+                System.out.print(canvas[i][j] ? "*" : " ");
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args) {
 
+        clearCanvas();
 
-        Point p1 = new Point(4, 5);
-        Point p2 = new Point(12, 5);
+        Point p = new Point(4,5);
+        p.drawOnCanvas(canvas);
+
+
+        drawCanvas();
+
+        /*
+        Point p1 = new Point(4, 1);
+        Point p2 = new Point(4, 5);
         Point p3 = new Point(100, 8);
         Segment mySegment = new Segment(p1, p2);
         System.out.println(mySegment.distanceFromPoint(p3));
-
+        */
 
     }
 

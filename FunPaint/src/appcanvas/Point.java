@@ -73,4 +73,21 @@ public class Point {
         }
         return false;
     }
+
+
+    public void drawOnCanvas(boolean[][] canvas){
+        if(canvas == null)
+            return;
+        if(canvas.length == 0)
+            return;
+        if(canvas[0].length == 0)
+            return;
+
+        if(this.xPos >= canvas[0].length)
+            return;
+        if(this.yPos >= canvas.length)
+            return;
+        canvas[yPos][xPos] = true;
+
+    }
 }

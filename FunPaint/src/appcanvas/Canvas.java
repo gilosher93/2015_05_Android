@@ -11,16 +11,13 @@ public class Canvas {
 
     public static void main(String[] args) {
 
-        Point p1 = new Point(4,3);
-        Circle c1 = new Circle(p1, 18);
-        p1.setYpos(14);
-        c1.setCenter(p1);
-        System.out.println(c1);
 
-        Point hackedCenter = c1.getCenter();
-        hackedCenter.setYpos(100);
-        System.out.println(c1);
-        Point p2 = new Point(p1);
+        Point p1 = new Point(4, 5);
+        Point p2 = new Point(12, 5);
+        Point p3 = new Point(100, 8);
+        Segment mySegment = new Segment(p1, p2);
+        System.out.println(mySegment.distanceFromPoint(p3));
+
 
     }
 

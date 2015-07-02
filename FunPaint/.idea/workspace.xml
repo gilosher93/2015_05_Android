@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bcef21-1abb-4efd-85f3-0886f1bc373e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StatusReporter/StatusReporter.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/appcanvas/StatusReporter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StatusReporter/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StatusReporter/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StatusReporter/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FunPaint/appcanvas/Border.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/appcanvas/Border.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/appcanvas/Canvas.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/appcanvas/Canvas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Circle.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Circle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Circles.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Circles.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Rectangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/appcanvas/Segment.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/appcanvas/Segment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Shape.class" afterPath="$PROJECT_DIR$/out/production/FunPaint/graphicshape/Shape.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/appcanvas/Canvas.java" afterPath="$PROJECT_DIR$/src/appcanvas/Canvas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphicshape/Circles.java" afterPath="$PROJECT_DIR$/src/graphicshape/Circles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphicshape/Parallelogram.java" afterPath="$PROJECT_DIR$/src/graphicshape/Parallelogram.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/appcanvas/Segment.java" afterPath="$PROJECT_DIR$/src/appcanvas/Segment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphicshape/Shape.java" afterPath="$PROJECT_DIR$/src/graphicshape/Shape.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Static/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Static/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/appcanvas/StatusReporter.java" afterPath="$PROJECT_DIR$/src/appcanvas/StatusReporter.java" />
     </list>
     <ignored path="FunPaint.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/appcanvas/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.719708">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
               <folding>
                 <element signature="e#1057#1058#0" expanded="true" />
                 <element signature="e#1110#1111#0" expanded="true" />
@@ -109,17 +90,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusReporter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatusReporter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/appcanvas/StatusReporter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.110948905">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,9 +194,9 @@
         <option value="$PROJECT_DIR$/src/graphicshape/Circles.java" />
         <option value="$PROJECT_DIR$/src/appcanvas/Segment.java" />
         <option value="$PROJECT_DIR$/src/graphicshape/Shape.java" />
-        <option value="$PROJECT_DIR$/src/appcanvas/StatusReporter.java" />
         <option value="$PROJECT_DIR$/src/graphicshape/Parallelogram.java" />
         <option value="$PROJECT_DIR$/src/appcanvas/Canvas.java" />
+        <option value="$PROJECT_DIR$/src/appcanvas/StatusReporter.java" />
       </list>
     </option>
   </component>
@@ -405,12 +381,12 @@
       <workItem from="1434972119664" duration="7073000" />
       <workItem from="1435212334016" duration="18525000" />
       <workItem from="1435557878954" duration="19489000" />
-      <workItem from="1435817672430" duration="9020000" />
+      <workItem from="1435817672430" duration="9577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101493000" />
+    <option name="totallyTimeSpent" value="102050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="997" extended-state="6" />
@@ -424,7 +400,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2121547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2121547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.134895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1052,29 +1028,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/appcanvas/StatusReporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/appcanvas/Canvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.719708">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
             <element signature="e#1057#1058#0" expanded="true" />
             <element signature="e#1110#1111#0" expanded="true" />
             <element signature="e#1142#1143#0" expanded="true" />
             <element signature="e#1206#1207#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appcanvas/StatusReporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.110948905">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

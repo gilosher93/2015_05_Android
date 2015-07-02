@@ -31,26 +31,23 @@ public class Canvas {
 
     public static void main(String[] args) {
 
-        clearCanvas();
-
-        //Point p1 = new Point(4, 5);
-        //Point p2 = new Point(12, 2);
-        //Segment segment = new Segment(p1, p2);
-
-        //segment.drawOnCanvas(canvas);
-
-        drawMagenDavid();
-
-        drawCanvas();
-
         /*
-        Point p1 = new Point(4, 1);
-        Point p2 = new Point(4, 5);
-        Point p3 = new Point(100, 8);
-        Segment mySegment = new Segment(p1, p2);
-        System.out.println(mySegment.distanceFromPoint(p3));
+        byte r = 18, g = -8, b = 100, a = 127;
+        Shape.Color myColor = new Shape.Color(r,g,b,a);
+        Shape.Color myOtherColor = StatusReporter.getDescriptiveColor(myColor);
+        System.out.println(myOtherColor);
         */
 
+        Parallelogram para = new Parallelogram(){
+            @Override
+            public double area() {
+                return super.area()+1;
+            }
+            public void stam(){
+                System.out.println("in stam...");
+            }
+        };
+        System.out.println("area: " + para.area());
 
 
     }

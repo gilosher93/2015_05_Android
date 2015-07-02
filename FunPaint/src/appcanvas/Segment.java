@@ -89,25 +89,31 @@ public class Segment {
         return deltaY/deltaX;
     }
 
+    protected boolean isNearSegment(Point p) {
+        double d = distanceFromPoint(p);
+        return d < 0.4;
+    }
+
     public boolean isPointOnSegment(Point p){
         Border border = getBorder();
-
         if(p.getXpos()>=border.leftBorder && p.getXpos()<=border.rightBorder &&
-                p.getYpos()>=border.topBorder && p.getYpos()<=border.bottomBorder){
-            double d = distanceFromPoint(p);
-            return d<0.4;
+                p.getYpos()>=border.topBorder && p.getYpos()<=border.bottomBorder) {
+            return isNearSegment(p);
         }
         return false;
     }
+
 
     public void drawOnCanvas(boolean[][] canvas){
         if(canvas == null)
             return;
         Border border = getBorder();
+        Point p = new Point(0, 0);
         for (int i = border.topBorder; i <= border.bottomBorder; i++) {
             for (int j = border.leftBorder; j <= border.rightBorder; j++) {
-                Point p = new Point(j,i);
-                if(isPointOnSegment(p))
+                p.setXpos(j);
+                p.setYpos(i);
+                if(isNearSegment(p))
                     p.drawOnCanvas(canvas);
             }
         }
@@ -137,6 +143,11 @@ public class Segment {
     }
 
 
+    public class Border{
+            int leftBorder, rightBorder, topBorder, bottomBorder;
+    }
+
+
     //x2 * y1 + (x2 - y1)*x0 - (x2-y1)*y0 - y2*x1
 
     /*
@@ -161,3 +172,20 @@ public class Segment {
 
      */
 }
+
+
+/*
+
+Nested Classes:
+
+
+ - Static nested class
+ - Inner class
+ - Local inner class
+ - Anonymous inner class
+
+
+ */
+
+
+
